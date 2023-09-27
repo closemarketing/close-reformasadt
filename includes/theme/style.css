@@ -1,0 +1,916 @@
+/*
+	Theme Name: Close·marketing
+	Theme URI: https://close.marketing
+	Description: Tema realizado creado a medida en WordPress.
+	Author: closemarketing
+	Author URI: https://close.marketing
+
+	Version: 1.0
+
+	Template: generatepress
+
+	License: GPL-2.0+
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* source-sans-pro-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-LightItalic.eot');
+  src: url('fonts/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-LightItalic.woff2') format('woff2'),
+      url('fonts/Roboto-LightItalic.woff') format('woff'),
+      url('fonts/Roboto-LightItalic.ttf') format('truetype'),
+      url('fonts/Roboto-LightItalic.svg#Roboto-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Medium.eot');
+  src: url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-Medium.woff2') format('woff2'),
+      url('fonts/Roboto-Medium.woff') format('woff'),
+      url('fonts/Roboto-Medium.ttf') format('truetype'),
+      url('fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Light.eot');
+  src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-Light.woff2') format('woff2'),
+      url('fonts/Roboto-Light.woff') format('woff'),
+      url('fonts/Roboto-Light.ttf') format('truetype'),
+      url('fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Italic.eot');
+  src: url('fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-Italic.woff2') format('woff2'),
+      url('fonts/Roboto-Italic.woff') format('woff'),
+      url('fonts/Roboto-Italic.ttf') format('truetype'),
+      url('fonts/Roboto-Italic.svg#Roboto-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.eot');
+  src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-Regular.woff2') format('woff2'),
+      url('fonts/Roboto-Regular.woff') format('woff'),
+      url('fonts/Roboto-Regular.ttf') format('truetype'),
+      url('fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Thin.eot');
+  src: url('fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-Thin.woff2') format('woff2'),
+      url('fonts/Roboto-Thin.woff') format('woff'),
+      url('fonts/Roboto-Thin.ttf') format('truetype'),
+      url('fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-ThinItalic.eot');
+  src: url('fonts/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-ThinItalic.woff2') format('woff2'),
+      url('fonts/Roboto-ThinItalic.woff') format('woff'),
+      url('fonts/Roboto-ThinItalic.ttf') format('truetype'),
+      url('fonts/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Bold.eot');
+  src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-Bold.woff2') format('woff2'),
+      url('fonts/Roboto-Bold.woff') format('woff'),
+      url('fonts/Roboto-Bold.ttf') format('truetype'),
+      url('fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-MediumItalic.eot');
+  src: url('fonts/Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-MediumItalic.woff2') format('woff2'),
+      url('fonts/Roboto-MediumItalic.woff') format('woff'),
+      url('fonts/Roboto-MediumItalic.ttf') format('truetype'),
+      url('fonts/Roboto-MediumItalic.svg#Roboto-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-BoldItalic.eot');
+  src: url('fonts/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-BoldItalic.woff2') format('woff2'),
+      url('fonts/Roboto-BoldItalic.woff') format('woff'),
+      url('fonts/Roboto-BoldItalic.ttf') format('truetype'),
+      url('fonts/Roboto-BoldItalic.svg#Roboto-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Black.eot');
+  src: url('fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-Black.woff2') format('woff2'),
+      url('fonts/Roboto-Black.woff') format('woff'),
+      url('fonts/Roboto-Black.ttf') format('truetype'),
+      url('fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-BlackItalic.eot');
+  src: url('fonts/Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Roboto-BlackItalic.woff2') format('woff2'),
+      url('fonts/Roboto-BlackItalic.woff') format('woff'),
+      url('fonts/Roboto-BlackItalic.ttf') format('truetype'),
+      url('fonts/Roboto-BlackItalic.svg#Roboto-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-LightItalic.eot');
+  src: url('fonts/Rubik-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-LightItalic.woff2') format('woff2'),
+      url('fonts/Rubik-LightItalic.woff') format('woff'),
+      url('fonts/Rubik-LightItalic.ttf') format('truetype'),
+      url('fonts/Rubik-LightItalic.svg#Rubik-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Light.eot');
+  src: url('fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-Light.woff2') format('woff2'),
+      url('fonts/Rubik-Light.woff') format('woff'),
+      url('fonts/Rubik-Light.ttf') format('truetype'),
+      url('fonts/Rubik-Light.svg#Rubik-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Medium.eot');
+  src: url('fonts/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-Medium.woff2') format('woff2'),
+      url('fonts/Rubik-Medium.woff') format('woff'),
+      url('fonts/Rubik-Medium.ttf') format('truetype'),
+      url('fonts/Rubik-Medium.svg#Rubik-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Light_1.eot');
+  src: url('fonts/Rubik-Light_1.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-Light_1.woff2') format('woff2'),
+      url('fonts/Rubik-Light_1.woff') format('woff'),
+      url('fonts/Rubik-Light_1.ttf') format('truetype'),
+      url('fonts/Rubik-Light_1.svg#Rubik-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Italic.eot');
+  src: url('fonts/Rubik-Italic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-Italic.woff2') format('woff2'),
+      url('fonts/Rubik-Italic.woff') format('woff'),
+      url('fonts/Rubik-Italic.ttf') format('truetype'),
+      url('fonts/Rubik-Italic.svg#Rubik-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-LightItalic_1.eot');
+  src: url('fonts/Rubik-LightItalic_1.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-LightItalic_1.woff2') format('woff2'),
+      url('fonts/Rubik-LightItalic_1.woff') format('woff'),
+      url('fonts/Rubik-LightItalic_1.ttf') format('truetype'),
+      url('fonts/Rubik-LightItalic_1.svg#Rubik-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Black.eot');
+  src: url('fonts/Rubik-Black.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-Black.woff2') format('woff2'),
+      url('fonts/Rubik-Black.woff') format('woff'),
+      url('fonts/Rubik-Black.ttf') format('truetype'),
+      url('fonts/Rubik-Black.svg#Rubik-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-ExtraBoldItalic.eot');
+  src: url('fonts/Rubik-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-ExtraBoldItalic.woff2') format('woff2'),
+      url('fonts/Rubik-ExtraBoldItalic.woff') format('woff'),
+      url('fonts/Rubik-ExtraBoldItalic.ttf') format('truetype'),
+      url('fonts/Rubik-ExtraBoldItalic.svg#Rubik-ExtraBoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Bold.eot');
+  src: url('fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-Bold.woff2') format('woff2'),
+      url('fonts/Rubik-Bold.woff') format('woff'),
+      url('fonts/Rubik-Bold.ttf') format('truetype'),
+      url('fonts/Rubik-Bold.svg#Rubik-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-BoldItalic.eot');
+  src: url('fonts/Rubik-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-BoldItalic.woff2') format('woff2'),
+      url('fonts/Rubik-BoldItalic.woff') format('woff'),
+      url('fonts/Rubik-BoldItalic.ttf') format('truetype'),
+      url('fonts/Rubik-BoldItalic.svg#Rubik-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-ExtraBold.eot');
+  src: url('fonts/Rubik-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-ExtraBold.woff2') format('woff2'),
+      url('fonts/Rubik-ExtraBold.woff') format('woff'),
+      url('fonts/Rubik-ExtraBold.ttf') format('truetype'),
+      url('fonts/Rubik-ExtraBold.svg#Rubik-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-BlackItalic.eot');
+  src: url('fonts/Rubik-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-BlackItalic.woff2') format('woff2'),
+      url('fonts/Rubik-BlackItalic.woff') format('woff'),
+      url('fonts/Rubik-BlackItalic.ttf') format('truetype'),
+      url('fonts/Rubik-BlackItalic.svg#Rubik-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-SemiBold.eot');
+  src: url('fonts/Rubik-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-SemiBold.woff2') format('woff2'),
+      url('fonts/Rubik-SemiBold.woff') format('woff'),
+      url('fonts/Rubik-SemiBold.ttf') format('truetype'),
+      url('fonts/Rubik-SemiBold.svg#Rubik-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Regular.eot');
+  src: url('fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-Regular.woff2') format('woff2'),
+      url('fonts/Rubik-Regular.woff') format('woff'),
+      url('fonts/Rubik-Regular.ttf') format('truetype'),
+      url('fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-SemiBoldItalic.eot');
+  src: url('fonts/Rubik-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-SemiBoldItalic.woff2') format('woff2'),
+      url('fonts/Rubik-SemiBoldItalic.woff') format('woff'),
+      url('fonts/Rubik-SemiBoldItalic.ttf') format('truetype'),
+      url('fonts/Rubik-SemiBoldItalic.svg#Rubik-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-MediumItalic.eot');
+  src: url('fonts/Rubik-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Rubik-MediumItalic.woff2') format('woff2'),
+      url('fonts/Rubik-MediumItalic.woff') format('woff'),
+      url('fonts/Rubik-MediumItalic.ttf') format('truetype'),
+      url('fonts/Rubik-MediumItalic.svg#Rubik-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+    /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+    /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+    /*
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+	  font-family: 'icons';
+	  src: url('fonts/icons.svg?10965690#icons') format('svg');
+	}
+    }
+    */
+    [class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	speak: never;
+    
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+    
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+    
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+    
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+    
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+    
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+    
+    .icon-left-open-big:before { content: '\e800'; } /* '' */
+    .icon-phone:before { content: '\e801'; } /* '' */
+    .icon-right-open-big:before { content: '\e802'; } /* '' */
+    .icon-heart-empty:before { content: '\e803'; } /* '' */
+    .icon-heart:before { content: '\e804'; } /* '' */
+    .icon-up-open-big:before { content: '\e805'; } /* '' */
+    .icon-down-open-big:before { content: '\e806'; } /* '' */
+    .icon-grao-search:before { content: '\e807'; } /* '' */
+    .icon-twitter:before { content: '\f099'; } /* '' */
+    .icon-facebook:before { content: '\f09a'; } /* '' */
+    .icon-mail-alt:before { content: '\f0e0'; } /* '' */
+    .icon-linkedin:before { content: '\f0e1'; } /* '' */
+    .icon-youtube:before { content: '\f167'; } /* '' */
+    .icon-instagram:before { content: '\f16d'; } /* '' */
+    .icon-whatsapp:before { content: '\f232'; } /* '' */
+
+/**
+* ## OWL Carousel style
+* --------------------------- */
+.owl-carousel {
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-grab {  
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+        opacity: 1;
+  }
+
+  100% {
+        opacity: 0;
+  }
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+      This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+      calculation of the height of the owl-item that breaks page layouts
+     */
+}
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-item .owl-lazy[src^=""],
+.owl-carousel .owl-item .owl-lazy:not([src]) {
+  max-height: 0;
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d;
+}
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+height: 55px;
+position: absolute;
+width: 35px;
+cursor: pointer;
+top: 100px;
+left: -45px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+height: 55px;
+position: absolute;
+width: 35px;
+right: -42px;
+cursor: pointer;
+top: 100px;
+}
+
+.owl-carousel .owl-nav i {
+font-size: 27px;
+}
+
+/**
+ * # Animaciones scroll
+ * ---------------------------------------------------------------------------------------------------- */
+.js-scroll {
+	opacity: 0;
+	transition: opacity 1000ms;
+}
+    
+.js-scroll.scrolled {
+	opacity: 1;
+}
+
+.scrolled.fade-in {
+	animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+	animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+	animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+	animation: slide-in-right 1s ease-in-out both;
+}
+
+.scrolled.flipInY {
+	animation: flipInY 1s ease-in-out both;
+}
+
+.scrolled.zoomIn {
+	animation: zoomIn 1s ease-in-out both;
+}
+
+.scrolled.zoomReverseIn {
+	animation: zoomReverseIn 1s ease-in-out both;
+}
+
+.scrolled.difusion {
+	animation: difusion 2s ease-in-out both;
+}
+
+.js-scroll-2 {
+	opacity: 0;
+	transition: opacity 1000ms;
+}
+
+.js-scroll-2.scrolled {
+	opacity: 1;
+}
+
+.js-scroll-3 {
+	opacity: 0;
+	transition: opacity 1000ms;
+}
+
+.js-scroll-3.scrolled {
+	opacity: 1;
+}
+
+.scrolled.scrollmove {
+	animation-name            : insertBanner;
+	animation-duration        : 1s;
+	animation-delay           : 2s;
+	animation-iteration-count : 1;
+	animation-fill-mode       : backwards;
+}
+
+@keyframes insertBanner {
+    from { transform : translateY(-4em) } /* slide down from off-screen */
+    to   { transform : translateY(0em) }
+}
+
+@keyframes slide-in-left {
+	0% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in-right {
+	0% {
+		-webkit-transform: translateX(100px);
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 2;
+	}
+}
+
+@keyframes fade-in-bottom {
+	0% {
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flipInY {
+	0% {
+		opacity: 0; 
+		transform: rotateY(90deg);
+	}
+	100% {
+		opacity: 1; 
+		transform: none;
+	} 
+}
+
+@keyframes zoomIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1; 
+		transform: none;
+	}
+}
+@keyframes zoomReverseIn {
+	0% {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 1; 
+		transform: none;
+	} 
+}
+@keyframes difusion {
+	0% {
+		opacity: 0.0;
+	}
+	5% {
+		opacity: 0.05;
+	}
+	10% {
+		opacity: 0.1;
+	}
+	15% {
+		opacity: 0.15;
+	}
+	20% {
+		opacity: 0.2;
+	}
+	25% {
+		opacity: 0.25;
+	}
+	30% {
+		opacity: 0.3;
+	}
+	35% {
+		opacity: 0.35;
+	}
+	40% {
+		opacity: 0.40;
+	}
+	45% {
+		opacity: 0.45;
+	}
+	50% {
+		opacity: 0.50;
+	}
+	55% {
+		opacity: 0.55;
+	}
+	60% {
+		opacity: 0.60;
+	}
+	65% {
+		opacity: 0.65;
+	}
+	70% {
+		opacity: 0.70;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	80% {
+		opacity: 0.80;
+	}
+	85% {
+		opacity: 0.85;
+	}
+	90% {
+		opacity: 0.90;
+	}
+	95% {
+		opacity: 0.95;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
+
+

@@ -13,19 +13,6 @@
 
 //add_image_size( 'testimonio', 90, 90, false );
 
-/**
- * Adds Local Font in GeneratePress https://www.closemarketing.es/go/wpd-generatepress/
- * Then you could donwload from Google Fonts using https://gwfh.mranftl.com/fonts
- */
-add_filter(
-	'generate_typography_default_fonts',
-	function( $fonts ) {
-		$fonts[] = 'Rubik';
-		$fonts[] = 'Roboto';
-		return $fonts;
-	}
-);
-
 add_action( 'admin_init', 'cmpat_remove_google_fonts_array' );
 /**
  * Remove Google Fonts from GeneratePress

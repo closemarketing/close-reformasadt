@@ -50,16 +50,9 @@ function cmk_theme_scripts() {
 		array(),
 		CMKADT_VERSION
 	);
-	wp_enqueue_script(
-		'animation-appear',
-		CMKADT_PLUGIN_URL . 'includes/theme/js/animations-apears.js',
-		array( 'jquery' ),
-		CMKADT_VERSION,
-		true
-	);
 	wp_register_script(
 		'owl-carousel',
-		CMKADT_PLUGIN_URL . 'includes/js/owl.carousel.min.js',
+		plugin_dir_url( __FILE__ ) . 'js/owl.carousel.min.js',
 		array( 'jquery' ),
 		CMKADT_VERSION,
 		true
@@ -67,12 +60,13 @@ function cmk_theme_scripts() {
 	wp_enqueue_script( 'owl-carousel' );
 
 	wp_register_script(
-		'move-titles',
-		CMKADT_PLUGIN_URL . 'includes/js/move-titles.js',
+		'cmklv-home-carr',
+		plugin_dir_url( __FILE__ ) . 'js/cmklv-home-carr.js',
 		array( 'jquery' ),
 		CMKADT_VERSION,
 		true
 	);
+	wp_enqueue_script( 'cmklv-home-carr' );
 }
 
 /**

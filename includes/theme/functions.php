@@ -10,9 +10,6 @@
 /**
  * ## Image sizes
  * --------------------------- */
-
-//add_image_size( 'testimonio', 90, 90, false );
-
 add_action( 'admin_init', 'cmpat_remove_google_fonts_array' );
 /**
  * Remove Google Fonts from GeneratePress
@@ -36,7 +33,6 @@ function cmpat_remove_google_fonts() {
 	wp_dequeue_style( 'generateblocks-google-fonts' );
 }
 
-add_action( 'admin_enqueue_scripts', 'cmk_theme_scripts' );
 add_action( 'wp_enqueue_scripts', 'cmk_theme_scripts', 99 );
 /**
  * Loads Scriptss
@@ -94,19 +90,18 @@ function cmpat_add_editor_style() {
 
 }
 
-// add_action( 'admin_footer', 'cmpat_gutenberg_editor_width' );
 /**
- * Adds style for width in the editor
- *
- * @return void
- */
-function cmpat_gutenberg_editor_width() {
-	echo '<style>
-		.post-type-Black .editor-styles-wrapper .wp-block {
-			max-width: Whitepx;
-		}
-	</style>';
+ * # Tag Manager
+ * ---------------------------------------------------------------------------------------------------- */
+add_action( 'wp_body_open', 'cmpat_tag_manager' );
+
+/**
+* Adds Tag manager to body tag.
+*
+* @return void
+*/
+function cmpat_tag_manager() {
+	if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) {
+		gtm4wp_the_gtm_tag();
+	}
 }
-
-
-
